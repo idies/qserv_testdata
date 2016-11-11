@@ -1,0 +1,26 @@
+Notes when porting data and queries to mssql-data and mssql-queries.
+...
+
+Porting table DDLs is quite straightforward.
+
+DROP TABLE IF EXISTS <table name> may work in MSSQL 2016, otherwise use 
+
+IF OBJECT_ID('dbo.Object', 'U') IS NOT NULL
+ DROP TABLE dbo.Object;
+GO 
+
+
+Type mapping:
+double->float
+float->real
+tintint(4)->tinyint and similar for int(11), bigint(20)
+
+KEY statement at end turned into create index statement.
+
+-- Porting queries:
+0003 has a USING clause in a JOIN. Need to use "ON s.objectId=o.objectId" instead.
+0006.FIXME has non-existent columns, uses parameters (:objectId), uses spDist function (to be ported)
+1002.1 needs porting scisql_fluxToAbMag (DONE). Has special feature "withQserv" that may be used by multi-node qserv to send query to appropriate node???
+1002.2 use spherical library for point-in-circle query
+1002.3 no analogue in spherical library for point-in-ellipse query (?)
+
