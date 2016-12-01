@@ -1,3 +1,5 @@
+-- MS SQL version of test query infile with same name in https://github.com/lsst/qserv_testdata.git/trunk/datasets/case02/queries
+-- 
 -- Cone-magnitude-color search
 -- See http://dev.lsstcorp.org/trac/wiki/db/queries/003
 
