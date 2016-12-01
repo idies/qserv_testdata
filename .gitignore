@@ -8,3 +8,4 @@ qserv_client_info.log
 *.pyc
 python/lsst/qserv/testdata/version.py
 .*.swp
+/.project
