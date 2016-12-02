@@ -1,3 +1,6 @@
+-- MS SQL version of test query infile with same name in https://github.com/lsst/qserv_testdata.git/trunk/datasets/case02/queries
+
+
 -- Select all variable objects in given area
 -- http://dev.lsstcorp.org/trac/wiki/dbQuery008
 

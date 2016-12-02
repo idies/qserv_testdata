@@ -24,3 +24,7 @@ KEY statement at end turned into create index statement.
 1002.2 use spherical library for point-in-circle query
 1002.3 no analogue in spherical library for point-in-ellipse query (?)
 
+
+
+To load SPHLib:
+   sqlcmd -S localhost -d LSST -E -b -i Jhu.Spherical.Sql.Create.sql
