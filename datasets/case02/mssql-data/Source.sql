@@ -1,118 +1,116 @@
+-- MS SQL DDL ported from MySQL version at C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\data\Source.sql
 
--------------------------------------------
--- MS SQL Server version of MySQL version in https://github.com/lsst/qserv_testdata.git/trunk/datasets/case02/data/Object.sql
--- ported by hand by Gerard Lemson
---
--- next will work in MS SQL 2016 and later
--- DROP TABLE IF EXISTS [Source]
--- until then ...
 IF OBJECT_ID('dbo.Source', 'U') IS NOT NULL
- DROP TABLE dbo.Source;
-GO 
+ DROP TABLE dbo.Source
 
 CREATE TABLE [Source] (
-  [sourceId] bigint NOT NULL,
-  [scienceCcdExposureId] bigint DEFAULT NULL,
-  [filterId] tinyint NOT NULL,
-  [objectId] bigint DEFAULT NULL,
-  [movingObjectId] bigint DEFAULT NULL,
-  [procHistoryId] int NOT NULL,
-  [ra] float NOT NULL,
-  [raErrForDetection] real DEFAULT NULL,
-  [raErrForWcs] real NOT NULL,
-  [decl] float NOT NULL,
-  [declErrForDetection] real DEFAULT NULL,
-  [declErrForWcs] real NOT NULL,
-  [xFlux] float DEFAULT NULL,
-  [xFluxErr] real DEFAULT NULL,
-  [yFlux] float DEFAULT NULL,
-  [yFluxErr] real DEFAULT NULL,
-  [raFlux] float DEFAULT NULL,
-  [raFluxErr] real DEFAULT NULL,
-  [declFlux] float DEFAULT NULL,
-  [declFluxErr] real DEFAULT NULL,
-  [xPeak] float DEFAULT NULL,
-  [yPeak] float DEFAULT NULL,
-  [raPeak] float DEFAULT NULL,
-  [declPeak] float DEFAULT NULL,
-  [xAstrom] float DEFAULT NULL,
-  [xAstromErr] real DEFAULT NULL,
-  [yAstrom] float DEFAULT NULL,
-  [yAstromErr] real DEFAULT NULL,
-  [raAstrom] float DEFAULT NULL,
-  [raAstromErr] real DEFAULT NULL,
-  [declAstrom] float DEFAULT NULL,
-  [declAstromErr] real DEFAULT NULL,
-  [raObject] float DEFAULT NULL,
-  [declObject] float DEFAULT NULL,
-  [taiMidPoint] float NOT NULL,
-  [taiRange] real DEFAULT NULL,
-  [psfFlux] float NOT NULL,
-  [psfFluxErr] real NOT NULL,
-  [apFlux] float NOT NULL,
-  [apFluxErr] real NOT NULL,
-  [modelFlux] float NOT NULL,
-  [modelFluxErr] real NOT NULL,
-  [petroFlux] float DEFAULT NULL,
-  [petroFluxErr] real DEFAULT NULL,
-  [instFlux] float NOT NULL,
-  [instFluxErr] real NOT NULL,
-  [nonGrayCorrFlux] float DEFAULT NULL,
-  [nonGrayCorrFluxErr] real DEFAULT NULL,
-  [atmCorrFlux] float DEFAULT NULL,
-  [atmCorrFluxErr] real DEFAULT NULL,
-  [apDia] real DEFAULT NULL,
-  [Ixx] real DEFAULT NULL,
-  [IxxErr] real DEFAULT NULL,
-  [Iyy] real DEFAULT NULL,
-  [IyyErr] real DEFAULT NULL,
-  [Ixy] real DEFAULT NULL,
-  [IxyErr] real DEFAULT NULL,
-  [snr] real NOT NULL,
-  [chi2] real NOT NULL,
-  [sky] real DEFAULT NULL,
-  [skyErr] real DEFAULT NULL,
-  [extendedness] real DEFAULT NULL,
-  [flux_PS] real DEFAULT NULL,
-  [flux_PS_Sigma] real DEFAULT NULL,
-  [flux_SG] real DEFAULT NULL,
-  [flux_SG_Sigma] real DEFAULT NULL,
-  [sersicN_SG] real DEFAULT NULL,
-  [sersicN_SG_Sigma] real DEFAULT NULL,
-  [e1_SG] real DEFAULT NULL,
-  [e1_SG_Sigma] real DEFAULT NULL,
-  [e2_SG] real DEFAULT NULL,
-  [e2_SG_Sigma] real DEFAULT NULL,
-  [radius_SG] real DEFAULT NULL,
-  [radius_SG_Sigma] real DEFAULT NULL,
-  [flux_flux_SG_Cov] real DEFAULT NULL,
-  [flux_e1_SG_Cov] real DEFAULT NULL,
-  [flux_e2_SG_Cov] real DEFAULT NULL,
-  [flux_radius_SG_Cov] real DEFAULT NULL,
-  [flux_sersicN_SG_Cov] real DEFAULT NULL,
-  [e1_e1_SG_Cov] real DEFAULT NULL,
-  [e1_e2_SG_Cov] real DEFAULT NULL,
-  [e1_radius_SG_Cov] real DEFAULT NULL,
-  [e1_sersicN_SG_Cov] real DEFAULT NULL,
-  [e2_e2_SG_Cov] real DEFAULT NULL,
-  [e2_radius_SG_Cov] real DEFAULT NULL,
-  [e2_sersicN_SG_Cov] real DEFAULT NULL,
-  [radius_radius_SG_Cov] real DEFAULT NULL,
-  [radius_sersicN_SG_Cov] real DEFAULT NULL,
-  [sersicN_sersicN_SG_Cov] real DEFAULT NULL,
-  [flagForAssociation] smallint DEFAULT NULL,
-  [flagForDetection] smallint DEFAULT NULL,
-  [flagForWcs] smallint DEFAULT NULL,
-  PRIMARY KEY ([sourceId])
+   [sourceId] BIGINT NOT NULL
+,  [scienceCcdExposureId] BIGINT DEFAULT NULL
+,  [filterId] TINYINT NOT NULL
+,  [objectId] BIGINT DEFAULT NULL
+,  [movingObjectId] BIGINT DEFAULT NULL
+,  [procHistoryId] INTEGER NOT NULL
+,  [ra] FLOAT NOT NULL
+,  [raErrForDetection] REAL DEFAULT NULL
+,  [raErrForWcs] REAL NOT NULL
+,  [decl] FLOAT NOT NULL
+,  [declErrForDetection] REAL DEFAULT NULL
+,  [declErrForWcs] REAL NOT NULL
+,  [xFlux] FLOAT DEFAULT NULL
+,  [xFluxErr] REAL DEFAULT NULL
+,  [yFlux] FLOAT DEFAULT NULL
+,  [yFluxErr] REAL DEFAULT NULL
+,  [raFlux] FLOAT DEFAULT NULL
+,  [raFluxErr] REAL DEFAULT NULL
+,  [declFlux] FLOAT DEFAULT NULL
+,  [declFluxErr] REAL DEFAULT NULL
+,  [xPeak] FLOAT DEFAULT NULL
+,  [yPeak] FLOAT DEFAULT NULL
+,  [raPeak] FLOAT DEFAULT NULL
+,  [declPeak] FLOAT DEFAULT NULL
+,  [xAstrom] FLOAT DEFAULT NULL
+,  [xAstromErr] REAL DEFAULT NULL
+,  [yAstrom] FLOAT DEFAULT NULL
+,  [yAstromErr] REAL DEFAULT NULL
+,  [raAstrom] FLOAT DEFAULT NULL
+,  [raAstromErr] REAL DEFAULT NULL
+,  [declAstrom] FLOAT DEFAULT NULL
+,  [declAstromErr] REAL DEFAULT NULL
+,  [raObject] FLOAT DEFAULT NULL
+,  [declObject] FLOAT DEFAULT NULL
+,  [taiMidPoint] FLOAT NOT NULL
+,  [taiRange] REAL DEFAULT NULL
+,  [psfFlux] FLOAT NOT NULL
+,  [psfFluxErr] REAL NOT NULL
+,  [apFlux] FLOAT NOT NULL
+,  [apFluxErr] REAL NOT NULL
+,  [modelFlux] FLOAT NOT NULL
+,  [modelFluxErr] REAL NOT NULL
+,  [petroFlux] FLOAT DEFAULT NULL
+,  [petroFluxErr] REAL DEFAULT NULL
+,  [instFlux] FLOAT NOT NULL
+,  [instFluxErr] REAL NOT NULL
+,  [nonGrayCorrFlux] FLOAT DEFAULT NULL
+,  [nonGrayCorrFluxErr] REAL DEFAULT NULL
+,  [atmCorrFlux] FLOAT DEFAULT NULL
+,  [atmCorrFluxErr] REAL DEFAULT NULL
+,  [apDia] REAL DEFAULT NULL
+,  [Ixx] REAL DEFAULT NULL
+,  [IxxErr] REAL DEFAULT NULL
+,  [Iyy] REAL DEFAULT NULL
+,  [IyyErr] REAL DEFAULT NULL
+,  [Ixy] REAL DEFAULT NULL
+,  [IxyErr] REAL DEFAULT NULL
+,  [snr] REAL NOT NULL
+,  [chi2] REAL NOT NULL
+,  [sky] REAL DEFAULT NULL
+,  [skyErr] REAL DEFAULT NULL
+,  [extendedness] REAL DEFAULT NULL
+,  [flux_PS] REAL DEFAULT NULL
+,  [flux_PS_Sigma] REAL DEFAULT NULL
+,  [flux_SG] REAL DEFAULT NULL
+,  [flux_SG_Sigma] REAL DEFAULT NULL
+,  [sersicN_SG] REAL DEFAULT NULL
+,  [sersicN_SG_Sigma] REAL DEFAULT NULL
+,  [e1_SG] REAL DEFAULT NULL
+,  [e1_SG_Sigma] REAL DEFAULT NULL
+,  [e2_SG] REAL DEFAULT NULL
+,  [e2_SG_Sigma] REAL DEFAULT NULL
+,  [radius_SG] REAL DEFAULT NULL
+,  [radius_SG_Sigma] REAL DEFAULT NULL
+,  [flux_flux_SG_Cov] REAL DEFAULT NULL
+,  [flux_e1_SG_Cov] REAL DEFAULT NULL
+,  [flux_e2_SG_Cov] REAL DEFAULT NULL
+,  [flux_radius_SG_Cov] REAL DEFAULT NULL
+,  [flux_sersicN_SG_Cov] REAL DEFAULT NULL
+,  [e1_e1_SG_Cov] REAL DEFAULT NULL
+,  [e1_e2_SG_Cov] REAL DEFAULT NULL
+,  [e1_radius_SG_Cov] REAL DEFAULT NULL
+,  [e1_sersicN_SG_Cov] REAL DEFAULT NULL
+,  [e2_e2_SG_Cov] REAL DEFAULT NULL
+,  [e2_radius_SG_Cov] REAL DEFAULT NULL
+,  [e2_sersicN_SG_Cov] REAL DEFAULT NULL
+,  [radius_radius_SG_Cov] REAL DEFAULT NULL
+,  [radius_sersicN_SG_Cov] REAL DEFAULT NULL
+,  [sersicN_sersicN_SG_Cov] REAL DEFAULT NULL
+,  [flagForAssociation] SMALLINT DEFAULT NULL
+,  [flagForDetection] SMALLINT DEFAULT NULL
+,  [flagForWcs] SMALLINT DEFAULT NULL
 )
 
-GO
+ALTER TABLE [Source] ADD CONSTRAINT pk_Source PRIMARY KEY ([sourceId])
 
-create index IDX_scienceCcdExposureId on [Source]([scienceCcdExposureId])
-create index IDX_filterId  on [Source]([filterId])
-create index IDX_movingObjectId  on [Source]([movingObjectId])
-create index IDX_objectId  on [Source]([objectId])
-create index IDX_procHistoryId  on [Source]([procHistoryId])
-create index IDX_Source_decl  on [Source]([decl])
 
-GO
+
+ CREATE INDEX ix_Source_IDX_scienceCcdExposureId ON [Source]([scienceCcdExposureId])
+
+ CREATE INDEX ix_Source_IDX_filterId ON [Source]([filterId])
+
+ CREATE INDEX ix_Source_IDX_movingObjectId ON [Source]([movingObjectId])
+
+ CREATE INDEX ix_Source_IDX_objectId ON [Source]([objectId])
+
+ CREATE INDEX ix_Source_IDX_procHistoryId ON [Source]([procHistoryId])
+
+ CREATE INDEX ix_Source_IDX_Source_decl ON [Source]([decl])
+
