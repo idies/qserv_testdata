@@ -1,0 +1,158 @@
+Log of query execution run at 20161206073122
+=========================
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\0001_fetchObjectById.sql
+- status = OK
+- num rows = 1
+- first row = [[433327840428032,null,1.27498251078,6.97211E-6,3.17918266274,6.93167E-6,-5.40462E-10,1.27498791997,2.10242E-5,3.17919905084,2.32172E-5,-3.40601E-11,null,null,null,null,null,null,null,null,null,null,null,null,49553.2738848,49705.0594728,0,7,null,null,null,null,null,null,null,null,null,null,null,null,null,null,2.01688E-29,1.40325E-30,null,null,null,null,null,49572.3754238,49691.0853798,null,null,0.0633405,0.173843,0.178416,0.102711,0.779209,0.0874316,28679,9,null,null,null,null,null,null,null,null,null,null,null,null,null,null,4.88771E-29,5.25814E-30,null,null,null,null,null,49553.2828168,49668.0847188,null,null,-0.336443,0.0363386,-0.586134,0.0484971,1.69081,0.131892,36873,13,null,null,null,null,null,null,null,null,null,null,null,null,null,null,9.1818E-29,6.65224E-30,null,null,null,null,null,49553.2738848,49649.0632538,null,null,-0.331293,0.0300818,-0.564624,0.0623472,1.65648,0.112084,53261,10,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.27461E-28,1.07147E-29,null,null,null,null,null,49564.2658518,49684.1167978,null,null,-0.319833,0.0416472,-0.588594,0.0570604,1.70228,0.108484,40970,5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.4159E-28,1.47118E-29,null,null,null,null,null,49591.3590368,49681.0289538,null,null,null,null,null,null,null,null,20485,10,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.76543E-28,9.78459E-30,null,null,null,null,null,49618.2469848,49705.0594728,null,null,-0.0616763,0.0829083,-0.192769,0.112917,1.04817,0.198796,40970]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\0002_fetchObjectByIdNoResult.sql
+- status = OK
+- num rows = 1
+- first row = [[433327840428032,null,1.27498251078,6.97211E-6,3.17918266274,6.93167E-6,-5.40462E-10,1.27498791997,2.10242E-5,3.17919905084,2.32172E-5,-3.40601E-11,null,null,null,null,null,null,null,null,null,null,null,null,49553.2738848,49705.0594728,0,7,null,null,null,null,null,null,null,null,null,null,null,null,null,null,2.01688E-29,1.40325E-30,null,null,null,null,null,49572.3754238,49691.0853798,null,null,0.0633405,0.173843,0.178416,0.102711,0.779209,0.0874316,28679,9,null,null,null,null,null,null,null,null,null,null,null,null,null,null,4.88771E-29,5.25814E-30,null,null,null,null,null,49553.2828168,49668.0847188,null,null,-0.336443,0.0363386,-0.586134,0.0484971,1.69081,0.131892,36873,13,null,null,null,null,null,null,null,null,null,null,null,null,null,null,9.1818E-29,6.65224E-30,null,null,null,null,null,49553.2738848,49649.0632538,null,null,-0.331293,0.0300818,-0.564624,0.0623472,1.65648,0.112084,53261,10,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.27461E-28,1.07147E-29,null,null,null,null,null,49564.2658518,49684.1167978,null,null,-0.319833,0.0416472,-0.588594,0.0570604,1.70228,0.108484,40970,5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.4159E-28,1.47118E-29,null,null,null,null,null,49591.3590368,49681.0289538,null,null,null,null,null,null,null,null,20485,10,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1.76543E-28,9.78459E-30,null,null,null,null,null,49618.2469848,49705.0594728,null,null,-0.0616763,0.0829083,-0.192769,0.112917,1.04817,0.198796,40970,null,null]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\0003_selectMetadataForOneGalaxy_withUSING.sql
+- status = OK
+- num rows = 6
+- first row = [[1.27507335026,3.17919133888,null,null]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\0004_fetchSourceById.sql
+- status = OK
+- num rows = 1
+- first row = [[2867930096075697,43761140382,2,433327840428724,null,0,1.27321808701,7.24326E-4,0.0,3.34484577562,0.00135771,0.0,null,null,null,null,1.23813765467,0.0,3.53944487971,0.0,null,null,1.23813765467,3.53944487971,3046.63950477,25.9747,1852.74793553,9.7401,1.27321808701,7.24326E-4,3.34484577562,0.00135771,1.27326370058,3.3448624504,49553.2738848,15.0,13950.9128744,531.217,2945.41641235,118.515,0.0,0.0,null,null,0.0,0.0,null,null,null,null,null,9.92351,null,9.4308,null,-0.73813,null,0.0,0.0,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,1408,0]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\1002.1_coneMagColor.sql
+- status = OK
+- num rows = 1
+- first row = [[242]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\1002.2_coneMagColor.sql
+- status = OK
+- num rows = 1
+- first row = [[7]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\1002.3_coneMagColor.sql
+- status = OK
+- num rows = 1
+- first row = [[109]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\1002.4_coneMagColor.sql
+- status = OK
+- num rows = 1
+- first row = [[109]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\1003_coneMagColorEmptyRes.sql
+- status = OK
+- num rows = 1
+- first row = [[4]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\1004.1_varObjects.sql
+- status = OK
+- num rows = 1000
+- first row = [[433327840428032,1.27498251078,3.17918266274]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\1004.2_varObjects.sql
+- status = OK
+- num rows = 61
+- first row = [[433327840428307]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\1004.4_varObjects.sql
+- status = ERROR
+- error = A .NET Framework error occurred during execution of user-defined routine or aggregate "Parse": 
+Jhu.Spherical.ShapeException: Bowtie in polygon
+Jhu.Spherical.ShapeException: 
+   at Jhu.Spherical.ShapeBuilder.GetPolygonDirection(IList`1 coords)
+   at Jhu.Spherical.ShapeBuilder.CreatePolygon(IList`1 coords)
+   at Jhu.Spherical.Parser.Parser.MatchPolygon()
+   at Jhu.Spherical.Parser.Parser.MatchGeometry()
+   at Jhu.Spherical.Parser.Parser.ParseRegion()
+   at Jhu.Spherical.Region.Parse(String text, Boolean normalize)
+   at Jhu.Spherical.Region.Parse(String text)
+   at Jhu.Spherical.Region.Parse(SqlChars chars)
+   at Jhu.Spherical.Sql.Region.ParseImpl(SqlChars chars, Boolean simpleSimplify, Boolean convexEliminate, Boolean makeDisjoint, Boolean unify, Int32 maxiter)
+   at Jhu.Spherical.Sql.Region.Parse(SqlChars chars)
+.
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\1004_varObjects.sql
+- status = OK
+- num rows = 1000
+- first row = [[433327840428032]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\3001_query_035.sql
+- status = OK
+- num rows = 4
+- first row = [[433327840428241]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\3005_objectCount.sql
+- status = OK
+- num rows = 1
+- first row = [[1000]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\3006_selectIntervalMagnitudes.sql
+- status = OK
+- num rows = 1
+- first row = [[2]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\3007_countObjectWithColorFluxGreaterThan.sql
+- status = OK
+- num rows = 1
+- first row = [[1]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\3008_selectObjectWithColorMagnitudeGreaterThan.sql
+- status = OK
+- num rows = 439
+- first row = [[433327840428032,1.27498251078,3.17918266274,2.01688E-29,4.88771E-29,9.1818E-29,1.27461E-28,1.4159E-28,1.76543E-28]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\3009_countObjectInRegionWithZFlux.sql
+- status = OK
+- num rows = 1
+- first row = [[65]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\3011_selectObjectWithMagnitudes.sql
+- status = OK
+- num rows = 855
+- first row = [[433327840428032,1.27498251078,3.17918266274,21.022418545165756]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\3011_selectObjectWithMagnitudes_noalias.sql
+- status = OK
+- num rows = 855
+- first row = [[433327840428032,1.27498251078,3.17918266274,21.022418545165756]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\3012_selectObjectInCircularRegion.sql
+- status = OK
+- num rows = 1
+- first row = [[920]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\3013_joinObjectSourceInRegion_withUSING.sql
+- status = OK
+- num rows = 3992
+- first row = [[433327840428036]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case02\mssql-queries\3014_joinObjectSourceTimeInterval_withUSING.sql
+- status = OK
+- num rows = 9
+- first row = [[1.37546343732,3.33872209483]]
+]

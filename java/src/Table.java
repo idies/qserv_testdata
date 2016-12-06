@@ -5,9 +5,10 @@ public class Table {
 
 	public String name;
 	public File indir, targetdir,inDDLFile, ddlFile, inGzipDataFile, inCsvFile, csvFile; 
-	
+	public int numRows = -1;
 	public boolean ddlParsed=false,tableCreated=false, dataTranslated=false,tableLoaded=false;
 	public String ddlParsedError,tableCreatedError, dataTranslatedError,tableLoadedError;
+	public String separator=",";
 	public boolean ok = true;
 	
 	public String toString(){
@@ -22,6 +23,7 @@ public class Table {
 				if(!dataTranslated)		sb.append("- dataTranslatedError = ").append(dataTranslatedError).append(NL);
 				else {
 					if(!tableLoaded)		sb.append("- tableLoadedError = ").append(tableLoadedError).append(NL);
+					else sb.append(" - num rows loaded = ").append(numRows).append(NL);
 				}
 			}
 		}

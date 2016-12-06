@@ -1,0 +1,2 @@
+Log of query execution run at 20161206073010
+=========================

@@ -9,3 +9,5 @@ qserv_client_info.log
 python/lsst/qserv/testdata/version.py
 .*.swp
 /.project
+/build/
+/.classpath

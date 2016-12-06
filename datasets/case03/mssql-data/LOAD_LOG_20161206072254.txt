@@ -1,0 +1,99 @@
+Log of table load run at 20161206072254
+=========================
+TABLE [
+- name =AvgForcedPhot
+- status = OK
+ - num rows loaded = 1000
+]
+TABLE [
+- name =AvgForcedPhotYearly
+- status = OK
+ - num rows loaded = 8985
+]
+TABLE [
+- name =DeepCoadd
+- status = ERROR
+- tableLoadedError = Bulk load data conversion error (type mismatch or invalid character for the specified codepage) for row 1, column 6 (ra).
+]
+TABLE [
+- name =DeepCoadd_Metadata
+- status = OK
+ - num rows loaded = 681
+]
+TABLE [
+- name =DeepCoadd_To_Htm10
+- status = OK
+ - num rows loaded = 117
+]
+TABLE [
+- name =null
+- status = ERROR
+- ddlParsedError = DeepForcedSource.sql is not Not a ddl, cannot find a create table statement
+
+]
+TABLE [
+- name =null
+- status = ERROR
+- ddlParsedError = DeepSource.sql is not Not a ddl, cannot find a create table statement
+
+]
+TABLE [
+- name =Filter
+- status = OK
+ - num rows loaded = 6
+]
+TABLE [
+- name =LeapSeconds
+- status = OK
+ - num rows loaded = 39
+]
+TABLE [
+- name =RefDeepSrcMatch
+- status = OK
+ - num rows loaded = 1001
+]
+TABLE [
+- name =RefObject
+- status = OK
+ - num rows loaded = 777
+]
+TABLE [
+- name =RunDeepForcedSource
+- status = ERROR
+- tableLoadedError = Bulk load data conversion error (type mismatch or invalid character for the specified codepage) for row 1, column 6 (flags_badcentroid).
+]
+TABLE [
+- name =RunDeepSource
+- status = ERROR
+- tableLoadedError = Bulk load data conversion error (type mismatch or invalid character for the specified codepage) for row 1, column 6 (calib_detected).
+]
+TABLE [
+- name =Science_Ccd_Exposure
+- status = ERROR
+- tableLoadedError = Bulk load data conversion error (type mismatch or invalid character for the specified codepage) for row 1, column 30 (poly).
+]
+TABLE [
+- name =Science_Ccd_Exposure_coadd_r
+- status = ERROR
+- tableLoadedError = Bulk load data conversion error (type mismatch or invalid character for the specified codepage) for row 1, column 30 (poly).
+]
+TABLE [
+- name =Science_Ccd_Exposure_Metadata
+- status = OK
+ - num rows loaded = 338884
+]
+TABLE [
+- name =Science_Ccd_Exposure_Metadata_coadd_r
+- status = OK
+ - num rows loaded = 113220
+]
+TABLE [
+- name =Science_Ccd_Exposure_To_Htm10_coadd_r
+- status = OK
+ - num rows loaded = 18796
+]
+TABLE [
+- name =ZZZ_Db_Description
+- status = OK
+ - num rows loaded = 1
+]

@@ -12,4 +12,5 @@ If not replace the provided sqljdbc41.jar file with an appropriate alternative.
 > javac -cp ./src/;lib/sqljdbc41.jar src/*.java
 
 To run, run following from within this folder:
-> java -cp ./src/.;lib/sqljdbc41.jar Translator C:/workspaces/git/LSST/idies-qserv_testdata/datasets/case02
+> java -cp ./src/.;lib/sqljdbc41.jar Translator <mode> C:/workspaces/git/LSST/idies-qserv_testdata/datasets/case02
+<mode> is either L (load data), or Q (run queries) or LQ (do both).

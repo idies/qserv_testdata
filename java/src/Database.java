@@ -42,10 +42,11 @@ public class Database {
 		return conn;
 	}
 
-	public void writeToDB(String sql, Connection connection) throws SQLException {
+	public int writeToDB(String sql, Connection connection) throws SQLException {
 		PreparedStatement ps = connection.prepareStatement(sql);
-		ps.execute();
+		int num = ps.executeUpdate();
 		ps.close();
+		return num;
 	}
 
 	/** attempt query to DB and report on result */

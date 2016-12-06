@@ -19,7 +19,10 @@ public class Query {
 		sb.append("- status = ").append((ok?"OK":"ERROR")).append(NL);
 		
 		if(!ok)		sb.append("- error = ").append(error).append(NL);
-		else sb.append("- first row = [").append(firstRow).append("]").append(NL);
+		else {
+			sb.append("- num rows = ").append(numRows).append(NL);
+			sb.append("- first row = [").append((numRows <= 0 ?"[]":firstRow)).append("]").append(NL);
+		}
 		sb.append("]");
 		return sb.toString();
 	}
