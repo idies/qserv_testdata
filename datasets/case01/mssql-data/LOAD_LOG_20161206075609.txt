@@ -1,0 +1,47 @@
+Log of table load run at 20161206075609
+=========================
+TABLE [
+- name =Filter
+- status = OK
+ - num rows loaded = 9
+]
+TABLE [
+- name =LeapSeconds
+- status = OK
+ - num rows loaded = 38
+]
+TABLE [
+- name =Logs
+- status = OK
+ - num rows loaded = 1000
+]
+TABLE [
+- name =Object
+- status = ERROR
+- tableLoadedError = Bulk load data conversion error (truncation) for row 1, column 228 (varBinaryField).
+]
+TABLE [
+- name =RefSrcMatch
+- status = OK
+ - num rows loaded = 3344
+]
+TABLE [
+- name =Science_Ccd_Exposure
+- status = ERROR
+- tableLoadedError = Bulk load data conversion error (type mismatch or invalid character for the specified codepage) for row 1, column 44 (poly).
+]
+TABLE [
+- name =sdqa_Metric
+- status = OK
+ - num rows loaded = 53
+]
+TABLE [
+- name =SimRefObject
+- status = OK
+ - num rows loaded = 3314
+]
+TABLE [
+- name =Source
+- status = ERROR
+- tableCreatedError = Column, parameter, or variable #108: Cannot find data type BLOB.
+]

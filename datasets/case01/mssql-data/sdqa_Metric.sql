@@ -4,7 +4,7 @@ IF OBJECT_ID('dbo.sdqa_Metric', 'U') IS NOT NULL
  DROP TABLE dbo.sdqa_Metric
 
 CREATE TABLE [sdqa_Metric] (
-   [sdqa_metricId] SMALLINT NOT NULL AUTO_INCREMENT
+   [sdqa_metricId] SMALLINT NOT NULL IDENTITY
 ,  [metricName] VARCHAR(30) NOT NULL
 ,  [physicalUnits] VARCHAR(30) NOT NULL
 ,  [dataType] CHAR(1) NOT NULL

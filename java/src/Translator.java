@@ -235,7 +235,7 @@ public class Translator {
 
 			out.printf("  [%s] %s", name, type);
 			for (int i = 2; i < words.length; i++)
-				out.printf(" %s", words[i]);
+				out.printf(" %s", words[i].replace("AUTO_INCREMENT","IDENTITY"));
 			out.print("\n");
 		}
 		out.print(")\n\n");
