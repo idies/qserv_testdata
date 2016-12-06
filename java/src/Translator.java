@@ -269,6 +269,8 @@ public class Translator {
 			return t;
 		if (t.equals("FLOAT"))
 			return "REAL";
+		if (t.equals("BLOB"))
+			return "VARBINARY(MAX)";
 		return t + parens;
 	}
 
@@ -340,7 +342,7 @@ public class Translator {
 				table.inGzipDataFile = files[0];
 				// 1. un-gzi the data file
 				table.inCsvFile = new File(table.inGzipDataFile.getAbsolutePath().replace(".gz", ""));
-				if(table.inCsvFile.getName().endsWith(".tsv"))
+				if(table.inCsvFile.getName().indexOf(".tsv")>-1)
 					table.separator="\t";
 				gunzipTableData(table);
 
