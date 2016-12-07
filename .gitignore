@@ -11,3 +11,5 @@ python/lsst/qserv/testdata/version.py
 /.project
 /build/
 /.classpath
+
+/env/
