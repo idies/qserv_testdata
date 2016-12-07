@@ -1,21 +1,46 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
+
 public class Database {
 
-	private String user = "lsst";
+/*	private String user = "lsst";
 	private String password = "lsst";
 	private String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
-	private String url = "jdbc:sqlserver://localhost:1433;DatabaseName=LSST";
+	private String url = "jdbc:sqlserver://localhost:1433;DatabaseName=LSST";*/
 
-	public Database(){}
+	private String user = "";
+	private String password = "";
+	private String driver = "";
+	private String url = "";
+
+	public Database(){
+		Properties prop = new Properties();
+
+
+
+		try (InputStream input = this.getClass().getResourceAsStream("config.properties")) {
+			//input = new FileInputStream("config.properties");
+
+			//load properties file
+			prop.load(input);
+			user = prop.getProperty("user");
+			password = prop.getProperty("password");
+			driver = prop.getProperty("driver");
+			url = prop.getProperty("url");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+
+
+
+	}
 	
 	public Database(String _u, String _p, String _url, String _d){
 		String user = _u;
@@ -23,6 +48,8 @@ public class Database {
 		String driver = _d;
 		String url = _url;
 	}
+
+
 	
 	public Connection connect() throws SQLException {
 
@@ -30,6 +57,7 @@ public class Database {
 			Class.forName(driver).newInstance();
 		} catch (ClassNotFoundException ex) {
 			System.out.println("Error: unable to load driver class!");
+			ex.printStackTrace();
 			System.exit(1);
 		} catch (IllegalAccessException ex) {
 			System.out.println("Error: access problem while loading!");
