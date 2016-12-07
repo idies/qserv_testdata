@@ -1,0 +1,98 @@
+Log of query execution run at 20161206072159
+=========================
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0002.1_fetchRunAndFieldById.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0002.2_fetchRunAndFieldById.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0006_selectExposure.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0009_selectCCDExposure.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0011_selectDeepCoadd.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0012_selectDistinctDeepCoaddWithGivenTractPatchFiltername.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0013_selectDeepCoadd2.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0014_selectDeepCoadd3.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0018_selectDeepCoaddWithGivenTractPatchFiltername.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0019.1_selectRunDeepSourceDeepcoaddDeepsrcmatchRefobject.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0019.2_selectRunDeepSourceDeepcoaddDeepsrcmatchRefobject.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0022_selectScienceCCDExposureWithFilternameFieldCamcolRun.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0023_selectScienceCCDExposureWithFilternameFieldCamcolRun.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0025_selectScienceCCDExposureWithFilternameFieldCamcolRun.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0028_selectScienceCCDExposure.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]
+QUERY [
+- file =C:\workspaces\git\LSST\idies-qserv_testdata\datasets\case03\mssql-queries\0031_selectEmptyString.sql
+- status = OK
+- num rows = 0
+- first row = [[]]
+]

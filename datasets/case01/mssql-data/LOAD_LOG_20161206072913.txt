@@ -1,0 +1,47 @@
+Log of table load run at 20161206072913
+=========================
+TABLE [
+- name =Filter
+- status = ERROR
+- tableLoadedError = Bulk load: An unexpected end of file was encountered in the data file.
+]
+TABLE [
+- name =LeapSeconds
+- status = ERROR
+- tableLoadedError = Bulk load: An unexpected end of file was encountered in the data file.
+]
+TABLE [
+- name =Logs
+- status = ERROR
+- tableCreatedError = Incorrect syntax near 'AUTO_INCREMENT'.
+]
+TABLE [
+- name =Object
+- status = ERROR
+- tableLoadedError = Bulk load data conversion error (type mismatch or invalid character for the specified codepage) for row 1, column 1 (objectId).
+]
+TABLE [
+- name =RefSrcMatch
+- status = ERROR
+- tableLoadedError = Bulk load: An unexpected end of file was encountered in the data file.
+]
+TABLE [
+- name =Science_Ccd_Exposure
+- status = ERROR
+- tableLoadedError = Bulk load data conversion error (type mismatch or invalid character for the specified codepage) for row 1, column 1 (scienceCcdExposureId).
+]
+TABLE [
+- name =sdqa_Metric
+- status = ERROR
+- tableCreatedError = Incorrect syntax near 'AUTO_INCREMENT'.
+]
+TABLE [
+- name =SimRefObject
+- status = ERROR
+- tableLoadedError = The bulk load failed. The column is too long in the data file for row 1, column 1. Verify that the field terminator and row terminator are specified correctly.
+]
+TABLE [
+- name =Source
+- status = ERROR
+- tableCreatedError = Column, parameter, or variable #108: Cannot find data type BLOB.
+]

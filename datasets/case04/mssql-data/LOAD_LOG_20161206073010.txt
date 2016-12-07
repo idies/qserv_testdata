@@ -1,0 +1,22 @@
+Log of table load run at 20161206073010
+=========================
+TABLE [
+- name =DeepCoadd
+- status = ERROR
+- tableLoadedError = Bulk load data conversion error (type mismatch or invalid character for the specified codepage) for row 1, column 1 (deepCoaddId).
+]
+TABLE [
+- name =DeepForcedSource
+- status = OK
+ - num rows loaded = 123753
+]
+TABLE [
+- name =DeepSource
+- status = OK
+ - num rows loaded = 500
+]
+TABLE [
+- name =Science_Ccd_Exposure
+- status = ERROR
+- tableLoadedError = Bulk load data conversion error (type mismatch or invalid character for the specified codepage) for row 1, column 1 (scienceCcdExposureId).
+]

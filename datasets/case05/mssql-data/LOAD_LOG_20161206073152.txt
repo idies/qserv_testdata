@@ -1,0 +1,20 @@
+Log of table load run at 20161206073152
+=========================
+TABLE [
+- name =Object
+- status = ERROR
+- dataTranslatedError = Found not a single data file for table 'TABLE [
+- name =Object
+- status = OK
+- dataTranslatedError = null
+]'
+]
+TABLE [
+- name =Source
+- status = ERROR
+- dataTranslatedError = Found not a single data file for table 'TABLE [
+- name =Source
+- status = OK
+- dataTranslatedError = null
+]'
+]

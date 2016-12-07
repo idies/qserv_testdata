@@ -1,0 +1,12 @@
+Log of table load run at 20161206073122
+=========================
+TABLE [
+- name =Object
+- status = OK
+ - num rows loaded = 1000
+]
+TABLE [
+- name =Source
+- status = OK
+ - num rows loaded = 4583
+]
