@@ -3,7 +3,9 @@
 set @dbname = 'qservTest_case01_mysql';
 set @tablename = 'Object';
 
-set @dbcount = 1
+set @dbcount = 1;
+
+select substring_index(substring_index(@dbname, '_', -2), '_', 1);
 
 
 drop temporary table if exists t1;
@@ -24,10 +26,13 @@ where table_schema LIKE '%_mysql';
 set group_concat_max_len = 15000;
 
 
+-- H:\GitHub\qserv_testdata\datasets\case01\mssql-fixed-data
 
+set @casenum = substring_index(substring_index(@dbname, '_', -2), '_', 1);
 
-set @filename = concat('~/lsst-data/test/', substring_index(@dbname, '_', -2), '_', @tablename, '.dat');
+set @filename = concat('~/GitHub/qserv_testdata/datasets/', @casenum, '/mssql-fixed-data/', @tablename, '.dat');
 
+select @filename;
 
 
 select concat(
