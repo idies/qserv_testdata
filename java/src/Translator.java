@@ -373,7 +373,7 @@ public class Translator {
 		}
 	}
 
-	public void loadData(List<Table> tables) throws SQLException {
+	public void loadData(List<Table> tables) throws SQLException, IOException {
 		// 3. create and run BULK INSERT statement
 		for (Table table : tables) {
 			if (!table.ok)
@@ -381,6 +381,19 @@ public class Translator {
 			Connection connection = database.connect();
 			String sql = String.format("BULK INSERT %s from '%s' WITH(fieldterminator='%s', tablock)", table.name,
 					table.csvFile,table.separator);
+
+			//sue's logging stuff
+			String now = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+			StringBuffer sb = new StringBuffer();
+			sb.append(table.name);
+			sb.append("\n");
+			sb.append(sql);
+			sb.append("\n\n");
+			try {
+				writeToFile(sb.toString(), new File(outfolder.getAbsolutePath() + "/BULK_LOG_" + now + ".txt"));
+			} catch (IOException e) {
+				System.err.println(e.getMessage());
+			}
 			try {
 				// user needs bulk admin server role.
 				PreparedStatement ps = connection.prepareStatement(sql);
