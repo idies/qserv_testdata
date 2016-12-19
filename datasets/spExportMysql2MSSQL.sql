@@ -80,10 +80,10 @@ BEGIN
 		into outfile '
 
 		, quote(filename), 
-						' fields terminated by \',\' ESCAPED BY \'\"\'
-						LINES TERMINATED BY \'\\\\r\\\\n\'
-						from ', dbname, '.', tablename
-		--				, ' limit 10'
+						' fields terminated by \',\' ESCAPED BY \'\"\'',
+						'LINES TERMINATED BY \'\\\\n\'',
+						' from ', dbname, '.', tablename
+	--					, ' limit 10'
 						);        
         
     prepare stmt from @s;
